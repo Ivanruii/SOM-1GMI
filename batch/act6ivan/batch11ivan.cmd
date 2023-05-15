@@ -7,12 +7,12 @@ set pares=0
 set /p num=Introduce un numero: 
 
 if %num% NEQ 0 (
-    set /a resto= %num% %%2
-    set /a cuenta= %cuenta% + 1
-    if %resto% EQU 0 (
-       set /a "pares=%pares%+1"
-    )
-    goto :bucle
+   set /a resto= %num% %%2
+   set /a cuenta= %cuenta% + 1
+   if %resto% EQU 0 (
+      set /a "pares=%pares%+1"
+   )
+   goto :bucle
 )
 
 set /a "impares=%cuenta% - %pares%"
