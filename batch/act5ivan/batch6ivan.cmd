@@ -11,5 +11,5 @@ if %nota% LSS 5 (
 ) else if %nota% LEQ 10 (
     echo Has sacado un %nota%, esta SOBRESALIENTE.
 ) else (
-   echo Has introducido una nota NO valida.
+    echo Has introducido una nota NO valida.
 )
