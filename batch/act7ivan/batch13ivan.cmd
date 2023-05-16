@@ -1,18 +1,20 @@
 @echo off
 
-set /p num=Ingresa un numero: 
-
-set /p try=Intenta adivinar el numero oculto: 
+set /p numoculto=Introduce un numero oculto: 
 
 :bucle
-if %num% GEQ %try% (
-    set range=mayor
+set /p num=Introduce un numero: 
+
+if %num% EQU %numoculto% (
+   echo Enhorabuena has acertado el numero oculto
+    goto :fin 
+) 
+
+if %num% GTR %numoculto% (
+   echo El numero es mayor que el oculto
 ) else (
-    set range=menor
-)
+   echo El numero es menor que el oculto
+) 
 
-set /p "try=Intenta adivinar el numero oculto, el numero es %range% que el anterior: "
-
-if %num% NEQ %try% goto :bucle
-
-echo Felicidades, has adivinado el numero oculto.
+goto :bucle
+:fin

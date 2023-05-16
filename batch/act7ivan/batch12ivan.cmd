@@ -6,10 +6,7 @@ set fact=1
 if %num% NEQ 0 (
    set /a "num=%num%-1"
    set /a "fact=%fact%*%num%"
-) else (
-   goto :fin
+   goto :bucle
 )
-goto :bucle
 
-:fin
 echo %fact%

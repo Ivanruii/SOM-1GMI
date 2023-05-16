@@ -1,7 +1,7 @@
 @echo off
 
-set /p nota1="Introduce la primera nota: "
-set /p nota2="Introduce la segunda nota: "
+set /p nota1=Introduce la primera nota: 
+set /p nota2=Introduce la segunda nota: 
 
 if %nota1% GTR %nota2% (
   set mayor=%nota1%
